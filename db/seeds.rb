@@ -11,7 +11,7 @@
                      content:   Faker::Lorem.paragraphs(25, true).join(' ')
                      
   
-  (Random.rand(10) + 1).times do
+  (Random.rand(10) + 2).times do
    comment = Comment.create author:   Faker::Name.name,
                             content:  Faker::Lorem.paragraphs(1, true).join(' '),
                             post: post
