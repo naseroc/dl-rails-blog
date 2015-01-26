@@ -3,4 +3,6 @@ class Comment < ActiveRecord::Base
         
     validates :author,  presence: true, length: { maximum: 50}
     validates :content, presence: true, length: { maximum: 10000 }
+    
+    default_scope { order 'created_at DESC' }
 end

@@ -1,7 +1,7 @@
 
 <% if @post.errors.any? %>
   <div id="error_explanation" class="alert alert-warning">
-    <h4><%= pluralize(@post.errors.count, "error") %> al crear el post:</h4>
+    <h4><%= pluralize(@post.errors.count, "error", "errores") %> al crear el post:</h4>
 
     <ul>
     <% @post.errors.full_messages.each do |message| %>

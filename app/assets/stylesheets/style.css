@@ -2,12 +2,12 @@
     border-radius: 0;
 }
 
-li.post{
-    
-}
-
-.posts {
+.posts, .comments {
     padding: 0;
     margin: 10px 0;
     list-style: none;
+}
+
+.btn-create {
+    margin-left: 25px;
 }

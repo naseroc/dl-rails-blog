@@ -8,6 +8,7 @@
         </div>
         <div class="panel-footer">
             <small> Creado: <%= post.created_at.strftime('%F') %></small> |
+            <small> <%= pluralize(post.comments.count, "comentario", "comentarios" ) %></small> |
             <%= link_to "Seguir leyendo", post %> |
             <%= link_to "Editar", edit_post_path(post) %>
             

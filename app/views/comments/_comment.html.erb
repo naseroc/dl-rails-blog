@@ -1,0 +1,11 @@
+<li id="comment-<%= comment.id %>" class="comment">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <%= comment.author %> |
+            <small><%= comment.created_at.strftime('%F') %></small>
+        </div>
+        <div class="panel-body">
+            <%= comment.content %>
+        </div>
+    </div>
+</li>
