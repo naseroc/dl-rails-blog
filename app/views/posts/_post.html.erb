@@ -1,0 +1,21 @@
+<li id="post-<%= post.id %>" class="post">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h4><%= link_to post.title, post %></h4>
+        </div>
+        <div class="panel-body">
+            <%= excerpt post %>
+        </div>
+        <div class="panel-footer">
+            <small> Creado: <%= post.created_at.strftime('%F') %></small> |
+            <%= link_to "Seguir leyendo", post %> |
+            <%= link_to "Editar", edit_post_path(post) %>
+            
+        </div>
+    </div>
+</li>
+
+
+
+
+      
