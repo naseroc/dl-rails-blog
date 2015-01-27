@@ -1,0 +1,12 @@
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h4>Categorías</h4>
+    </div>
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            <% @categories.each do |category| %>
+                <li role="presentation"><%= link_to category.name, category  %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>

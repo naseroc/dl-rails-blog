@@ -9,6 +9,7 @@
         <span class="icon-bar"></span>
       </button>
       <%= link_to 'RailsBlog', root_path, class: 'navbar-brand' %>
+      <p class="navbar-text">Un blog hecho con Ruby on Rails</p>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -16,7 +17,7 @@
       <form class="navbar-form navbar-right" role="search">
         <%= link_to 'Crear post', new_post_path, class: 'btn btn-primary btn-create' %>
       </form>
-
+      <%= render 'layouts/categories_nav' %>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

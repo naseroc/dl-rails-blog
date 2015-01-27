@@ -22,8 +22,11 @@
       <% end %>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-9">
         <%= yield %>
+      </div>
+      <div class="col-md-3">
+        <%= render 'layouts/sidebar' %>
       </div>
     </div>
   </main>

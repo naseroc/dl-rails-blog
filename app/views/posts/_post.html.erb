@@ -2,6 +2,7 @@
     <div class="panel panel-info">
         <div class="panel-heading">
             <h4><%= link_to post.title, post %></h4>
+            Publicado en <%= link_to post.category.name, post.category %>
         </div>
         <div class="panel-body">
             <%= excerpt post %>
