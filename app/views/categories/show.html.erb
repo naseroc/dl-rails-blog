@@ -3,7 +3,7 @@
   <div class="panel-body">
     <h1>Categoría: <%= @category.name %></h1>
     <p>
-      <%= @category.posts.count %> posts
+      <%= pluralize @category.posts.count, 'post', 'posts' %>
     </p>
     <p class="lead">
       <%= @category.description %>
