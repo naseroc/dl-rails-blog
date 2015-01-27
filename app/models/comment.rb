@@ -5,4 +5,5 @@ class Comment < ActiveRecord::Base
     validates :content, presence: true, length: { maximum: 10000 }
     
     default_scope { order 'created_at DESC' }
+    scope :latest, -> { limit(5) }
 end

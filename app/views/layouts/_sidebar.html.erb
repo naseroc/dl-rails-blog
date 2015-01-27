@@ -10,3 +10,16 @@
         </ul>
     </div>
 </div>
+
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h4>Últimos comentarios</h4>
+    </div>
+    <div class="panel-body">
+        <ul class="comments">
+            <% Comment.latest.each do |comment| %>
+                <%= render partial: "comments/comment_sidebar", locals: {comment: comment} %>
+            <% end %>
+        </ul>
+    </div>
+</div>
